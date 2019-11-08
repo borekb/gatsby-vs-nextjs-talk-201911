@@ -1,0 +1,14 @@
+{
+  "name": "@borekb/gatsby-vs-nextjs-talk-201911",
+  "version": "1.0.0",
+  "repository": "https://github.com/borekb/gatsby-vs-nextjs-talk-201911",
+  "author": "Borek Bernard <borekb@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "mdx-deck talk/gatsby-vs-nextjs.mdx",
+    "build": "mdx-deck build talk/gatsby-vs-nextjs.mdx"
+  },
+  "dependencies": {
+    "mdx-deck": "^3.0.13"
+  }
+}
