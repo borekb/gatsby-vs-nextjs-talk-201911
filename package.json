@@ -5,8 +5,8 @@
   "author": "Borek Bernard <borekb@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "mdx-deck talk/index.mdx",
-    "build": "mdx-deck build talk/index.mdx"
+    "start": "mdx-deck talk/gatsby-vs-nextjs.mdx",
+    "build": "mdx-deck build talk/gatsby-vs-nextjs.mdx"
   },
   "dependencies": {
     "mdx-deck": "^3.0.13"
