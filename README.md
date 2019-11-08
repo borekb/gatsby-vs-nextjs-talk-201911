@@ -6,3 +6,4 @@ Prague, 14 Nov 2019.
 
 - `yarn start` to start the dev server.
 - `yarn build` to export to `public`.
+- To export to PDF, run the dev server, visit `/print` and use browser's "Save to PDF".
