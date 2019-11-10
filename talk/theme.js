@@ -10,11 +10,10 @@ export default {
       px: 4,
     },
     root: {
-      fontSize: ['1.5em', null, '4em'],
       textAlign: 'center',
     },
-    pre: {
-      textAlign: 'left',
-    },
+    // pre: {
+    //   fontSize: ['0.5em'], // doesn't work for me, see https://github.com/jxnblk/mdx-deck/issues/554
+    // },
   },
 };
