@@ -6,6 +6,9 @@ export default {
     body: '"Annie Use Your Telescope", cursive',
   },
   styles: {
+    Slide: {
+      px: 4,
+    },
     root: {
       fontSize: ['1.5em', null, '4em'],
       textAlign: 'center',
