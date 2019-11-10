@@ -1,7 +1,126 @@
+import { Notes, Image } from 'mdx-deck';
+import { GatsbyLogo } from './images';
+import myTheme from './theme';
+import { prism } from 'mdx-deck/themes';
+export const themes = [myTheme, prism];
+
 # Gatsby vs. Next.js
 
+GatsbyJS meetup<br />
+Prague, 14 Nov 2019
+
 ---
 
-# About Me
+# I am a _software engineer_
 
 ---
+
+## My websites in the past:
+
+- **Plain HTML** for presentational sites
+- **WordPress** for blogs
+
+---
+
+# It was both 🤘 and 🤕
+
+---
+
+# 2013: React ⚛️
+
+---
+
+# My initial reactions:
+
+1. This approach to building UIs feels _right_.
+2. Let's build _applications_ with it.
+
+---
+
+# 2014–2017:
+
+- People are building _SPAs_ with ⚛️
+- For sites, I'm still using WordPress & plain HTML
+
+---
+
+(I thought https://pin.gy/cli/ was pretty cool)
+
+---
+
+# 2018: Gatsby explodes 💥
+
+---
+
+### ❤️❤️❤️ SPEEED ❤️❤️❤️
+
+---
+
+### no servers to ~~manage~~ hack
+
+---
+
+### React ⚛️
+
+---
+
+# What's not to like?
+
+<div style={{ width: '150px' }}>
+  <GatsbyLogo />
+</div>
+
+---
+
+## 1. Gatsby's SSR is a "lie"
+
+---
+
+<img
+  width='600'
+  alt="Kyle's tweet about SSR"
+  src='https://user-images.githubusercontent.com/101152/68533165-1d643080-0325-11ea-86a8-2036e7779c3c.png'
+/>
+
+---
+
+<img
+  width='601'
+  alt="Another tweet on Gatsby's SSR"
+  src='https://user-images.githubusercontent.com/101152/68535956-b6f20900-034a-11ea-82a9-fd7cac06b5e1.png'
+/>
+
+---
+
+## 2. Heavy bet on GraphQL
+
+<Notes>
+
+- I personally love GraphQL
+- It's an interesting abstraction
+  - Maybe useful
+  - Maybe unnecessary
+
+</Notes>
+
+---
+
+<div style={{ fontSize: '0.5em' }}>
+
+```jsx
+export const query = graphql`
+  query {
+    fileName: file(relativePath: { eq: "images/myimage.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400, maxHeight: 250) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
+```
+
+</div>
+
+🤔
