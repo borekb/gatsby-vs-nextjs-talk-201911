@@ -1,5 +1,5 @@
 import { Notes, Image } from 'mdx-deck';
-import { GatsbyLogo } from './images';
+import { GatsbyLogo, ShoptetLogo, ReactLogo } from './images';
 import myTheme from './theme';
 import { prism } from 'mdx-deck/themes';
 export const themes = [myTheme, prism];
@@ -11,44 +11,82 @@ Prague, 14 Nov 2019
 
 ---
 
-# I am a _software engineer_
+## I am a _software engineer_ 
 
 ---
 
-## My websites in the past:
-
-- **Plain HTML** for presentational sites
-- **WordPress** for blogs
+## ... forced to make websites
 
 ---
 
-# It was both 🤘 and 🤕
+2000's & most of 2010's:
+
+blogs → **WordPress**<br/>
+simple sites → **plain HTML**
 
 ---
 
-# 2013: React ⚛️
+# It was both ✌️ and 🤕
 
 ---
 
-# My initial reactions:
+# WordPress
 
-1. This approach to building UIs feels _right_.
-2. Let's build _applications_ with it.
-
----
-
-# 2014–2017:
-
-- People are building _SPAs_ with ⚛️
-- For sites, I'm still using WordPress & plain HTML
+✅ Complex sites quickly<br/>
+✅ Themes & plugins<br/>
+✅ Lots of resources<br/>
 
 ---
 
-(I thought https://pin.gy/cli/ was pretty cool)
+# WordPress
+
+🙁 Ugly old codebase<br/>
+🐌 Slow by default<br/>
+😭 No version control<br/>
+
+---
+
+# Plain old HTML
+
+Confession: I actually enjoyed it
+
+---
+
+# Plain old HTML
+
+... but was really unproductive with it
+
+---
+
+In the meantime, **React** ⚛️ happened
+
+---
+
+I quickly fell in love
+
+---
+
+VersionPress adopted it for its UI in 2015
+
+---
+
+Our VP.com dashboard was a React app
+
+---
+
+### We were building _apps_ in React
+
+---
+
+My websites: still **WordPress** & **plain HTML**
 
 ---
 
 # 2018: Gatsby explodes 💥
+
+---
+
+I'm trying it for our VP.com website
 
 ---
 
@@ -124,3 +162,135 @@ export const query = graphql`
 </div>
 
 🤔
+
+---
+
+## 3. Slow re-builds for large sites
+
+The result is fast, the builds not so much
+
+---
+
+Still, I loved Gatsby.
+
+We use it at <https://versionpress.com>
+
+---
+
+# 2019: New project for us
+
+---
+
+<div style={{ width: '150px' }}>
+  <ShoptetLogo />
+</div>
+
+---
+
+Would Gatsby be a good fit?
+
+---
+
+# NO
+
+SSR is a must for e-shops
+
+---
+
+<!-- Next.js -->
+
+![Next.js](https://assets.zeit.co/image/upload/v1538361091/repositories/next-js/next-js.png)
+
+---
+
+Initially, there wasn't much intrigue to me:
+
+- No universal data layer via GraphQL
+- Fewer optimizations out of the box
+- No plugin system
+
+---
+
+But it had **SSR**.
+
+---
+
+<img width="777" alt="Screenshot 2019-11-14 at 00 04 50" src="https://user-images.githubusercontent.com/101152/68812104-6a703b80-0672-11ea-80de-4ffcc97228da.png" />
+
+---
+
+Over time, we fell in love with Next.js
+
+---
+
+Different deployment models for different pages
+
+---
+
+![image](https://user-images.githubusercontent.com/101152/68812600-c2f40880-0673-11ea-979d-175754129119.png)
+
+[Source](https://twitter.com/abigger87/status/1175459223137701888)
+
+---
+
+Simpler (more **barebones**) than Gatsby
+
+---
+
+ZEIT Now deployments 😍
+
+▲
+
+---
+
+Not all rosy:
+
+- The team is very opinionated
+- No plugin ecosystem
+
+---
+
+But we still love Next.js
+
+---
+
+# In summary:
+
+- We ❤️ Gatsby
+- We ❤️ Next.js
+
+---
+
+# Gatsby is really strong for static sites
+
+---
+
+# Next.js is great for complex applications
+
+---
+
+But most importantly...
+
+---
+
+# Both are ⚛️
+
+---
+
+# ⚛️
+
+One set of skills<br/>
+UI components are 99% the same<br/>
+JS libraries usable in both<br/>
+
+---
+
+We've been able to port some Gatsby features to Next.js
+
+e.g., themes
+
+---
+
+# Thank you
+
+@borekb
