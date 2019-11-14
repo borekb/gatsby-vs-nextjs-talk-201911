@@ -84,10 +84,7 @@ But _websites_ were still **WordPress** & **plain HTML**
 
 # 2018: Gatsby explodes 💥
 
-<div style={{ width: '150px' }}>
-  <GatsbyLogo />
-</div>
-
+## <MiddleImg><GatsbyLogo /></MiddleImg>
 
 ---
 
@@ -107,11 +104,11 @@ I'm trying it for our [VP.com website](https://versionpress.com)
 
 ---
 
-New kind of experience ⇒ questining old truths
+New kind of experience ⇒ questioning old truths
 
 ---
 
-### 🤔 Why is our dashboard an SPA?
+### 🤔 Why do we build SPAs?
 
 ---
 
@@ -130,14 +127,11 @@ New kind of experience ⇒ questining old truths
 
 </div>
 
-Why we're doing this to our users?
+### Why are we serving this to our users?
 
 ---
 
-But we kept it. So:
-
-Dashboard → **SPA**<br/>
-Website → **Gatsby**<br/>
+But we kept at it.
 
 ---
 
@@ -152,14 +146,6 @@ Website → **Gatsby**<br/>
 ---
 
 ## Would Gatsby be a good fit?
-
----
-
-# NO ☹️
-
----
-
-## SSR is a \*must\* for e-shops
 
 ---
 
@@ -181,6 +167,8 @@ Website → **Gatsby**<br/>
 
 ### By "SSR", Gatsby means build-time pre-rendering
 
+Dear sirs, SSR !== pre-rendering. Best regards, Borek
+
 ---
 
 <!-- Next.js -->
@@ -189,21 +177,25 @@ Website → **Gatsby**<br/>
 
 ---
 
-## It does SSR but felt... poor in comparison
+## It felt quite poor in comparison:
 
----
+<div style={{textAlign: 'left'}}>
 
 - Barebones (no plugin system, no themes, ...)<br/>
 - No universal data layer via GraphQL<br/>
 - Fewer optimizations out of the box<br/>
 
+</div>
+
 ---
 
 ## But it had **SSR**
 
+and eshops abso-freakin-lutely need SSR
+
 ---
 
-## ... and was better than other choices
+## Next.js also felt better than other choices
 
 <img width="777" alt="Screenshot 2019-11-14 at 00 04 50" src="https://user-images.githubusercontent.com/101152/68812104-6a703b80-0672-11ea-80de-4ffcc97228da.png" />
 
@@ -219,17 +211,17 @@ Website → **Gatsby**<br/>
 
 ---
 
-Being **barebones** is a benefit for Shoptet
+Being **barebones** was a benefit for Shoptet's platform
 
 ---
 
-**Data fetching** however we want
+**Data fetching** however we wanted
 
 (we chose GraphQL anyway 😄)
 
 ---
 
-The **best deployment model** I've seen to date
+The **best runtime model** I've seen to date
 
 ---
 
@@ -259,12 +251,12 @@ ZEIT Now deployments 😍
 
 <div style={{textAlign: 'left'}}>
 
-- Easily fetch data from anywhere
-    - WordPress
+- Easily combine data from multiple sources
     - Markdown
-    - .csv file
+    - WordPress
+    - \`gatsby-source-*\`
 - Many plugins available
-- Great performance optimizations
+- Great performance
 
 </div>
 
@@ -272,11 +264,20 @@ ZEIT Now deployments 😍
 
 2. For **apps**, I'd use Next <SmallImg><NextLogo /></SmallImg>
 
-(Certainly not CRA / create-react-application.)
+---
+
+# <SmallImg><NextLogo /></SmallImg>
+
+<div style={{textAlign: 'left'}}>
+
+- See e.g. Kap
+- Next.js has almost no downsides <br/>compared to plain React app / CRA
+
+</div>
 
 ---
 
-3. For **complex / dynamic sites**, Next <SmallImg><NextLogo /></SmallImg> is a clear choice
+3. For **complex / dynamic sites**, clearly Next <SmallImg><NextLogo /></SmallImg>
 
 ---
 
@@ -303,14 +304,12 @@ ZEIT Now deployments 😍
 # ⚛️
 
 One set of skills<br/>
-Code is mostly the same<br/>
-Both build on React, Babel, webpack, ...
-
-e.g., we've been able to port Gatsby themes to Next.js
+Code is 95% the same<br/>
+Both built on React, Babel, webpack, ...
 
 ---
 
-(4. For a **[slide deck](https://github.com/borekb/gatsby-vs-nextjs-talk-201911)**, I'd use Gatsby <SmallImg><GatsbyLogo /></SmallImg> & mdx-deck 😄.)
+(4. For a **slide deck**, I'd use Gatsby <SmallImg><GatsbyLogo /></SmallImg> & mdx-deck 😄. [Repo](https://github.com/borekb/gatsby-vs-nextjs-talk-201911).)
 
 # Thank you!
 
