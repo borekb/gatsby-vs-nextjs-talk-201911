@@ -2,6 +2,9 @@
 
 Prague, 14 Nov 2019.
 
+- <https://gatsby-vs-nextjs-talk-201911.borekb.now.sh/>
+- <https://www.slideshare.net/borekb/gatsby-vs-nextjs>
+
 ## How to run & export
 
 - `yarn start` to start the dev server.
