@@ -1,7 +1,296 @@
+import { Notes, Image } from 'mdx-deck';
+import { GatsbyLogo, ShoptetLogo, ReactLogo } from './images';
+import myTheme from './theme';
+import { prism } from 'mdx-deck/themes';
+export const themes = [myTheme, prism];
+
 # Gatsby vs. Next.js
 
+GatsbyJS meetup<br />
+Prague, 14 Nov 2019
+
 ---
 
-# About Me
+## I am a _software engineer_ 
 
 ---
+
+## ... forced to make websites
+
+---
+
+2000's & most of 2010's:
+
+blogs → **WordPress**<br/>
+simple sites → **plain HTML**
+
+---
+
+# It was both ✌️ and 🤕
+
+---
+
+# WordPress
+
+✅ Complex sites quickly<br/>
+✅ Themes & plugins<br/>
+✅ Lots of resources<br/>
+
+---
+
+# WordPress
+
+🙁 Ugly old codebase<br/>
+🐌 Slow by default<br/>
+😭 No version control<br/>
+
+---
+
+# Plain old HTML
+
+Confession: I actually enjoyed it
+
+---
+
+# Plain old HTML
+
+... but was really unproductive with it
+
+---
+
+In the meantime, **React** ⚛️ happened
+
+---
+
+I quickly fell in love
+
+---
+
+VersionPress adopted it for its UI in 2015
+
+---
+
+Our VP.com dashboard was a React app
+
+---
+
+### We were building _apps_ in React
+
+---
+
+My websites: still **WordPress** & **plain HTML**
+
+---
+
+# 2018: Gatsby explodes 💥
+
+---
+
+I'm trying it for our VP.com website
+
+---
+
+### ❤️❤️❤️ SPEEED ❤️❤️❤️
+
+---
+
+### no servers to ~~manage~~ hack
+
+---
+
+### React ⚛️
+
+---
+
+# What's not to like?
+
+<div style={{ width: '150px' }}>
+  <GatsbyLogo />
+</div>
+
+---
+
+## 1. Gatsby's SSR is a "lie"
+
+---
+
+<img
+  width='600'
+  alt="Kyle's tweet about SSR"
+  src='https://user-images.githubusercontent.com/101152/68533165-1d643080-0325-11ea-86a8-2036e7779c3c.png'
+/>
+
+---
+
+<img
+  width='601'
+  alt="Another tweet on Gatsby's SSR"
+  src='https://user-images.githubusercontent.com/101152/68535956-b6f20900-034a-11ea-82a9-fd7cac06b5e1.png'
+/>
+
+---
+
+## 2. Heavy bet on GraphQL
+
+<Notes>
+
+- I personally love GraphQL
+- It's an interesting abstraction
+  - Maybe useful
+  - Maybe unnecessary
+
+</Notes>
+
+---
+
+<div style={{ fontSize: '0.5em' }}>
+
+```jsx
+export const query = graphql`
+  query {
+    fileName: file(relativePath: { eq: "images/myimage.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400, maxHeight: 250) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
+```
+
+</div>
+
+🤔
+
+---
+
+## 3. Slow re-builds for large sites
+
+The result is fast, the builds not so much
+
+---
+
+Still, I loved Gatsby.
+
+We use it at <https://versionpress.com>
+
+---
+
+# 2019: New project for us
+
+---
+
+<div style={{ width: '150px' }}>
+  <ShoptetLogo />
+</div>
+
+---
+
+Would Gatsby be a good fit?
+
+---
+
+# NO
+
+SSR is a must for e-shops
+
+---
+
+<!-- Next.js -->
+
+![Next.js](https://assets.zeit.co/image/upload/v1538361091/repositories/next-js/next-js.png)
+
+---
+
+Initially, there wasn't much intrigue to me:
+
+- No universal data layer via GraphQL
+- Fewer optimizations out of the box
+- No plugin system
+
+---
+
+But it had **SSR**.
+
+---
+
+<img width="777" alt="Screenshot 2019-11-14 at 00 04 50" src="https://user-images.githubusercontent.com/101152/68812104-6a703b80-0672-11ea-80de-4ffcc97228da.png" />
+
+---
+
+Over time, we fell in love with Next.js
+
+---
+
+Different deployment models for different pages
+
+---
+
+![image](https://user-images.githubusercontent.com/101152/68812600-c2f40880-0673-11ea-979d-175754129119.png)
+
+[Source](https://twitter.com/abigger87/status/1175459223137701888)
+
+---
+
+Simpler (more **barebones**) than Gatsby
+
+---
+
+ZEIT Now deployments 😍
+
+▲
+
+---
+
+Not all rosy:
+
+- The team is very opinionated
+- No plugin ecosystem
+
+---
+
+But we still love Next.js
+
+---
+
+# In summary:
+
+- We ❤️ Gatsby
+- We ❤️ Next.js
+
+---
+
+# Gatsby is really strong for static sites
+
+---
+
+# Next.js is great for complex applications
+
+---
+
+But most importantly...
+
+---
+
+# Both are ⚛️
+
+---
+
+# ⚛️
+
+One set of skills<br/>
+UI components are 99% the same<br/>
+JS libraries usable in both<br/>
+
+---
+
+We've been able to port some Gatsby features to Next.js
+
+e.g., themes
+
+---
+
+# Thank you
+
+@borekb
